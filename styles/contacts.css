@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header img {
+    height: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: #495057;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+nav a:hover {
+    background-color: #6c757d;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 0.5em 0;
+}
+
+iframe {
+    border: 0;
+    max-width: 700px;
+    width: 600px;
+    height: 300px;
+    margin-top: 1em;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    padding: 1em 40px 1em 40px;
+    background-color: #dfdfdf;
+    color: rgb(134, 134, 134);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav {
+        gap: 0.5em;
+        flex-direction: column;
+    }
+
+    .map-container iframe {
+        height: 300px;
+        width: 200px;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
