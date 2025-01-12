@@ -8,19 +8,21 @@ body {
 header {
     background-color: #343a40;
     color: white;
-    padding: 4em;
+    padding: 5%;
     text-align: center;
     background: url('/pngs/template\ background.png') no-repeat center center/cover;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 nav {
-    margin: 30px 0 -30px 0;
+    margin: 30px 0 3% 0;
     display: flex;
+    top: 0;
+    position: sticky;
     justify-content: center;
     background-color: #495057;
     border-radius: 10px;
@@ -49,23 +51,28 @@ h2{
     display: flex;
     justify-content: center;
 }
-
+.events{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 .event {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
-
-    margin-bottom: 1em;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 5px;
+    text-align: center;
+    max-width: fit-content;
 }
 
 .categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1em;
+    gap: 10px;
 }
 
 .category {
@@ -73,7 +80,7 @@ h2{
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    padding: 1em;
+    padding: 5px;
 }
 
 .gallery {
@@ -101,14 +108,14 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .window h1 {
+}
+
+.window h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-  }
+}
   
-  .button {
+.window a {
     text-decoration: none;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -116,11 +123,11 @@ h2{
     background-color: #0078d7;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .button:hover {
+.button:hover {
     background-color: #005a9e;
-  }
+}
 
 footer {
     text-align: center;
@@ -154,5 +161,16 @@ footer {
         background-color: #6c757d;
         color: white;
     }
-    
+    .events{
+        flex-direction: column;
+    }
+    main{
+        padding: 5%;
+    }
+    .window{
+        padding: 10px;
+    }
+    .window h1{
+        font-size: x-large;
+    }
 }
